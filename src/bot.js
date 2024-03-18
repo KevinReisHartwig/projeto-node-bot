@@ -28,5 +28,5 @@ bot.on('photo', async function(msg){
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
 
-  bot.sendMessage(chatId, 'msg recebida');
+  bot.sendMessage(chatId, 'msg recebida com sucesso');
 });
