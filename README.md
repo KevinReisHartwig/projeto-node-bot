@@ -7,5 +7,6 @@
 # Comandos
 
 - npm install
-- npx tsc
-- npn run dev
+- npm install --global typescript
+- npm run predev
+- npm run dev
