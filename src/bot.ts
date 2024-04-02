@@ -3,14 +3,7 @@ import { config } from "dotenv";
 
 config();
 
-const token = process.env.TOKEN;
-
-if (!token) {
-  console.error("A variável de ambiente TOKEN não está definida.");
-  process.exit(1);
-}
-
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
 
 bot.onText(/\/echo (.+)/, (msg, match) => {
 
