@@ -11,7 +11,7 @@
 - https://www.npmjs.com/package/dotenv
 - https://www.npmjs.com/package/node-telegram-bot-api?activeTab=readme
 
-#Ferramentas utilizadas
+# Ferramentas utilizadas
 - NodeJS
 - API TelegramBot
 - TypeScript
