@@ -11,6 +11,14 @@
 - https://www.npmjs.com/package/dotenv
 - https://www.npmjs.com/package/node-telegram-bot-api?activeTab=readme
 
+#Ferramentas utilizadas
+- NodeJS
+- API TelegramBot
+- TypeScript
+- JavaScript
+- SQL Lite com Prisma
+- DotEnv
+
 # Comandos
 
 - npm install
