@@ -18,6 +18,7 @@
 - JavaScript
 - SQL Lite com Prisma
 - DotEnv
+- Nodemon
 
 # Comandos
 
