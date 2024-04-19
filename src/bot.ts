@@ -15,7 +15,7 @@ bot.on('message', async (msg) => {
   const horaAtual = new Date().getHours();
 
   if (!emailFoiSolicitado) {
-    if (horaAtual >= 9 && horaAtual < 18) {
+    if (horaAtual >= 9 && horaAtual <= 18) {
       bot.sendMessage(chatId, 'Olá! Aqui está o link: https://faesa.br');
     } else {
       bot.sendMessage(chatId, 'Desculpe, estamos fora do horário comercial, que é das 09:00 às 18:00. Por favor, forneça seu e-mail para que possamos entrar em contato.');
@@ -30,7 +30,7 @@ bot.on('text', async (msg) => {
   const horaAtual = new Date().getHours();
   const email = msg.text;
 
-  if (emailFoiSolicitado && msg.message_id !== idPrimeiraMensagem && horaAtual < 9 && horaAtual > 18) {
+  if (emailFoiSolicitado && msg.message_id !== idPrimeiraMensagem && horaAtual <= 9 && horaAtual >= 18) {
     const verificandoEmail = /\S+@\S+\.\S+/;
     if (typeof email === 'string' && verificandoEmail.test(email)) {
       try {
