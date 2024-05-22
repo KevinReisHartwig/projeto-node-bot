@@ -6,7 +6,7 @@
   "scripts": {
     "prisma": "npx prisma generate --schema=src/prisma/schema.prisma",
     "predev": "npx tsc",
-    "dev": "npx nodemon ./build/bot.js",
+    "dev": "npx nodemon ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
